@@ -1,0 +1,45 @@
+name: valory.learning_chained_abci
+author: valory
+events:
+  - DONE
+  - NONE
+  - NO_MAJORITY
+  - RESET_TIMEOUT
+  - ROUND_TIMEOUT
+start_state: RegistrationRound
+final_states: []
+initial_states:
+  - RegistrationRound
+states:
+  - RegistrationRound
+  - RandomTaskRound
+  - SelectKeeperRound
+  - ChanceToFlipCoin
+  - DeclareWinnerOrLoser
+  - ResetAndPauseRound
+transitions:
+  RegistrationRound:
+    DONE: RandomTaskRound
+  RandomTaskRound:
+    DONE: SelectKeeperRound
+    NONE: RandomTaskRound
+    NO_MAJORITY: RandomTaskRound
+    ROUND_TIMEOUT: RandomTaskRound
+  SelectKeeperRound:
+    DONE: ChanceToFlipCoin
+    NONE: RegistrationRound
+    NO_MAJORITY: RegistrationRound
+    ROUND_TIMEOUT: RegistrationRound
+  ChanceToFlipCoin:
+    DONE: DeclareWinnerOrLoser
+    NONE: ChanceToFlipCoin
+    NO_MAJORITY: ChanceToFlipCoin
+    ROUND_TIMEOUT: ChanceToFlipCoin
+  DeclareWinnerOrLoser:
+    DONE: ResetAndPauseRound
+    NONE: RegistrationRound
+    ROUND_TIMEOUT: RandomTaskRound
+  ResetAndPauseRound:
+    DONE: RandomTaskRound
+    NO_MAJORITY: RegistrationRound
+    RESET_TIMEOUT: RegistrationRound

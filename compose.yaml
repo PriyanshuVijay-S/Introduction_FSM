@@ -1,0 +1,9 @@
+author: valory
+management: pipfile
+sources:
+- author: valory-xyz
+  name: open-aea
+  version: v1.60.0
+- author: valory-xyz
+  name: open-autonomy
+  version: v0.18.3

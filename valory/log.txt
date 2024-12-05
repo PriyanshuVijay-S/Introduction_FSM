@@ -1,0 +1,10 @@
+[2024-12-05 20:28:54,693] [INFO] [valory] Start processing messages...
+[2024-12-05 20:32:19,035] [WARNING] [valory] Cannot handle envelope: no active handler for protocol=valory/abci:0.1.0 in skill=valory/hello_world_abci:0.1.0. Sender=valory/abci:0.1.0, to=valory/abci:0.1.0.
+[2024-12-05 20:32:19,036] [WARNING] [valory] Cannot handle envelope: no active handler for protocol=valory/abci:0.1.0 in skill=valory/hello_world_abci:0.1.0. Sender=valory/abci:0.1.0, to=valory/abci:0.1.0.
+[2024-12-05 20:32:35,712] [INFO] [valory] connection at EOF, stop receiving loop.
+[2024-12-05 20:32:35,713] [INFO] [valory] connection at EOF, stop receiving loop.
+[2024-12-05 20:32:35,713] [INFO] [valory] connection at EOF, stop receiving loop.
+[2024-12-05 20:32:35,714] [INFO] [valory] connection at EOF, stop receiving loop.
+[2024-12-05 20:34:33,035] [WARNING] [valory] Cannot handle envelope: no active handler for protocol=valory/abci:0.1.0 in skill=valory/hello_world_abci:0.1.0. Sender=valory/abci:0.1.0, to=valory/abci:0.1.0.
+[2024-12-05 20:34:33,036] [WARNING] [valory] Cannot handle envelope: no active handler for protocol=valory/abci:0.1.0 in skill=valory/hello_world_abci:0.1.0. Sender=valory/abci:0.1.0, to=valory/abci:0.1.0.
+[2024-12-05 20:36:53,641] [INFO] [valory] HTTP Client has shutdown on port: 8000.
